@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQuery Functions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#click h3').click(function () {
+                alert('I told you it would do something.');
+            });
+            $('#hide h3').hover(function () {
+                $('#hide p').hide();
+            });
+            $('#show h3').click(function () {
+                $('#show p').show();
+            });
+            $('#toggle h3').hover(function () {
+                $('#toggle p').toggle();
+            });
+            $('#slidedown h3').click(function () {
+                $('#slidedown p').slideDown();
+            });
+            $('#slideup h3').click(function () {
+                $('#slideup p').slideUp();
+            });
+            $('#slidetoggle h3').click(function () {
+                $('#slidetoggle p').slideToggle();
+            });
+            $('#fadein h3').hover(function () {
+                $('#fadein p').fadeIn();
+            });
+            $('#fadeout h3').click(function () {
+                $('#fadeout p').fadeOut();
+            });
+            $('#addclass h3').click(function () {
+                $('#addclass p').addClass();
+            });
+            $('#before p').before($('#before b'));
+            $('#after b').after($('#after p'));
+            $('#append p').append($('strong'));
+            $('#html h3').click(function () {
+                $('#html p').html('Does this work?');
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="background">
+        <h2>JQuery Functions</h2>
+        <p>This page is a demonstration and reference page of some useful jQuery handlers.</p>
+        <p>Click or hover over each function to see a demonstration.</p>
+        <div id="click">
+            <h3>.click</h3>
+            <p>Clicking on this text will do something.</p>
+        </div>
+        <div id="hide">
+            <h3>.hide</h3>
+            <p>Peek-a-boo.</p>
+        </div>
+        <div id="show">
+            <h3>.show</h3>
+            <p style="display:none">Peek-a-boo again.</p>
+        </div>
+        <div id="toggle">
+            <h3>.toggle</h3>
+            <p>Here I go.</p>
+            <p style="display:none">Boy, Bye!</p>
+        </div>
+        <div id="slidedown">
+            <h3>.slideDown</h3>
+            <p>Going down.</p>
+        </div>
+        <div id="slideup">
+            <h3>.slideUp</h3>
+            <p>Here I go.</p>
+        </div>
+        <div id="slidetoggle">
+            <h3>.slideToggle</h3>
+            <p>I'll be back.</p>
+        </div>
+        <div id="fadein">
+            <h3>.fadeIn</h3>
+            <p style="display:none">I'm all in.</p>
+        </div>
+        <div id="fadeout">
+            <h3>.fadeOut</h3>
+            <p>Peace out.</p>
+        </div>
+        <div id="addclass">
+            <h3>.addClass</h3>
+            <p>I was a teacher, how much classier can I get?</p>
+            <div class='red' style="display:none">If this appears, you did something right.</div>
+        </div>
+        <div id="before">
+            <h3>.before</h3>
+            <p>Cake!</p>
+            <b>Eggs, flour, sugar, yeast, etc.</b>
+        </div>
+        <div id="after">
+            <h3>.after</h3>
+            <p>Yuan Dynasty</p>
+            <b>Han Dynasty</b>
+        </div>
+        <div id="append">
+            <h3>.append</h3>
+            <strong>Bat!</strong>
+            <p>Twinkle Twinkle Little </p>
+        </div>
+        <div id="html">
+            <h3>.html</h3>
+            <p>Yuan Dynasty</p>
+            <b>Han Dynasty</b>
+        </div>
+        <div id="attr">
+            <h3>.attr</h3>
+            <p>Yuan Dynasty</p>
+            <b>Han Dynasty</b>
+        </div>
+        <div id="val">
+            <h3>.val</h3>
+            <p>Yuan Dynasty</p>
+            <b>Han Dynasty</b>
+        </div>
+        <div id="text">
+            <h3>.text</h3>
+            <p>Yuan Dynasty</p>
+            <b>Han Dynasty</b>
+        </div>
+    </div>
+</body>
+
+</html>

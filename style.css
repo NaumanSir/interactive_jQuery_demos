@@ -1,0 +1,12 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#background {
+    padding: 10px;
+    width: 970px;
+}
+#background div {
+    padding: 20px 10px 10px 10px;
+    border-bottom-style: dotted;
+}
